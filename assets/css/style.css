@@ -60,6 +60,9 @@ p{
   justify-content: space-between;
   align-items: center;
 }
+.mobile-menu{
+  display: none;
+}
 .menu ul{
   padding: 0;
   margin: 0;
@@ -115,13 +118,14 @@ p{
  }
  .hero-img img{
    width:71%; 
+   transition: transform 1s;
  }
 
  /*---------------------------------------------
  blog section
  ---------------------------------------------*/
  .blog-area{
-   padding-top:80px;
+   padding:80px 0;
  }
  .blog-wrapper{
    display:grid;
@@ -137,6 +141,30 @@ p{
    width:100%;
  }
 
+
+  /*---------------------------------------------
+  achievement area
+ ---------------------------------------------*/
+ .achieve-area{
+  background-color: #F8F9FA;
+  padding: 80px 0;
+}
+ .achievement-wrapper{
+   display:grid;
+   grid-template-columns: repeat(4, 1fr);
+ }
+ .achievement {
+  text-align: center;
+}
+ .achievement h4 {
+  font-size: 60px;
+  color: #010101;
+  font-weight: 500;
+}
+ }
+ .achievement p {
+  text-transform: uppercase;
+}
 
   /*---------------------------------------------
 footer area
@@ -167,4 +195,29 @@ footer area
  p.copywrite-text{
    text-align:center;
    
+ }
+
+  /*---------------------------------------------
+    subscribe area
+ ---------------------------------------------*/
+ .subscribe-area{
+   padding:70px 0;
+   background-color: rgba(27, 27, 70, 0.246);
+ }
+ .subscribe{
+   display:flex;
+   justify-content: center; 
+ }
+ .subscribe h3{
+   margin-right: 20px;
+ }
+ .subscribe input[type="text"]{
+   padding:10px;
+   border:1px solid #ddd;
+   border-radius:5px;
+ } 
+ .subscribe input[type="submit"]{
+   padding: 10px 20px; 
+   border:none;
+
  }
